@@ -1,8 +1,10 @@
+// 1- WAP to create a calculator using switch statement ?
+
 using System;
 
 public class HelloWorld
 {
-    public static int Calculator( int choice ,int a ,int b)
+    public static int Calculator( int choice ,int a ,int b) // method for calculator functionality 
     {
         switch (choice)
         {
@@ -25,16 +27,18 @@ public class HelloWorld
             
         }
     }
-    public static void Main(string[] args)
+    public static void Main(string[] args) // Entry point to a program
     {
       Console.WriteLine("Choose:-\n1-ADD \n2-Subtract \n3-Multiply \n4-Divide");
-     
       int choice = int.Parse(Console.ReadLine());
+        
       Console.WriteLine("Enter first number : ");
       int a = int.Parse(Console.ReadLine());
+        
       Console.WriteLine("Enter Second number : ");
       int b = int.Parse(Console.ReadLine());
-      int result=  Calculator(choice , a ,b);
+        
+      int result=  Calculator(choice , a ,b); // Stored return value in result
          
         if (choice ==1)
         {
